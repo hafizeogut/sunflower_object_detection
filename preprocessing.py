@@ -8,4 +8,5 @@ import yaml
 root_dir = "datasets/sunflower" # bu dizin altında resimler ve etiket dosyaları bulunur.
 valid_formats = [".png","jpg","jpeg",".txt"] #veri kümesinde yer almasına izin verilen formatlar belirleniyor.
 
-def file_paths(root,valid_formats):şdfkfd
+def file_paths(root,valid_formats):
+    hj
