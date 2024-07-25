@@ -1,0 +1,114 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+Traceback (most recent call last):
+  File "/home/hafizeogut/.local/bin/yolo", line 8, in <module>
+    sys.exit(entrypoint())
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/cfg/__init__.py", line 708, in entrypoint
+    getattr(model, mode)(**overrides)  # default args from model
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/model.py", line 652, in train
+    self.trainer.train()
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 204, in train
+    self._do_train(world_size)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 323, in _do_train
+    self._setup_train(world_size)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 262, in _setup_train
+    self.amp = torch.tensor(check_amp(self.model), device=self.device)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/utils/checks.py", line 663, in check_amp
+    assert amp_allclose(YOLO("yolov8n.pt"), im)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/utils/checks.py", line 650, in amp_allclose
+    a = m(im, device=device, verbose=False)[0].boxes.data  # FP32 inference
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/model.py", line 174, in __call__
+    return self.predict(source, stream, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/model.py", line 444, in predict
+    return self.predictor.predict_cli(source=source) if is_cli else self.predictor(source=source, stream=stream)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/predictor.py", line 168, in __call__
+    return list(self.stream_inference(source, model, *args, **kwargs))  # merge list of Result into one
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 35, in generator_context
+    response = gen.send(None)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/predictor.py", line 234, in stream_inference
+    self.model.warmup(imgsz=(1 if self.model.pt or self.model.triton else self.dataset.bs, 3, *self.imgsz))
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/autobackend.py", line 632, in warmup
+    self.forward(im)  # warmup
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/autobackend.py", line 456, in forward
+    y = self.model(im, augment=augment, visualize=visualize, embed=embed)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 102, in forward
+    return self.predict(x, *args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 120, in predict
+    return self._predict_once(x, profile, visualize, embed)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 141, in _predict_once
+    x = m(x)  # run
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/modules/conv.py", line 54, in forward_fuse
+    return self.act(self.conv(x))
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt
+Traceback (most recent call last):
+  File "/home/hafizeogut/.local/bin/yolo", line 8, in <module>
+    sys.exit(entrypoint())
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/cfg/__init__.py", line 708, in entrypoint
+    getattr(model, mode)(**overrides)  # default args from model
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/model.py", line 652, in train
+    self.trainer.train()
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 204, in train
+    self._do_train(world_size)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 323, in _do_train
+    self._setup_train(world_size)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/trainer.py", line 262, in _setup_train
+    self.amp = torch.tensor(check_amp(self.model), device=self.device)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/utils/checks.py", line 663, in check_amp
+    assert amp_allclose(YOLO("yolov8n.pt"), im)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/utils/checks.py", line 650, in amp_allclose
+    a = m(im, device=device, verbose=False)[0].boxes.data  # FP32 inference
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/model.py", line 174, in __call__
+    return self.predict(source, stream, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/model.py", line 444, in predict
+    return self.predictor.predict_cli(source=source) if is_cli else self.predictor(source=source, stream=stream)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/predictor.py", line 168, in __call__
+    return list(self.stream_inference(source, model, *args, **kwargs))  # merge list of Result into one
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/utils/_contextlib.py", line 35, in generator_context
+    response = gen.send(None)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/engine/predictor.py", line 234, in stream_inference
+    self.model.warmup(imgsz=(1 if self.model.pt or self.model.triton else self.dataset.bs, 3, *self.imgsz))
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/autobackend.py", line 632, in warmup
+    self.forward(im)  # warmup
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/autobackend.py", line 456, in forward
+    y = self.model(im, augment=augment, visualize=visualize, embed=embed)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 102, in forward
+    return self.predict(x, *args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 120, in predict
+    return self._predict_once(x, profile, visualize, embed)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/tasks.py", line 141, in _predict_once
+    x = m(x)  # run
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/ultralytics/nn/modules/conv.py", line 54, in forward_fuse
+    return self.act(self.conv(x))
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1532, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/module.py", line 1541, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 460, in forward
+    return self._conv_forward(input, self.weight, self.bias)
+  File "/home/hafizeogut/.local/lib/python3.10/site-packages/torch/nn/modules/conv.py", line 456, in _conv_forward
+    return F.conv2d(input, weight, bias, self.stride,
+KeyboardInterrupt

@@ -1,0 +1,227 @@
+Freezing layer 'model.22.dfl.conv.weight'
+[34m[1mAMP: [39m[22mrunning Automatic Mixed Precision (AMP) checks with YOLOv8n...
+[34m[1mAMP: [39m[22mchecks passed ✅
+[34m[1mtrain: [39m[22mNew cache created: /home/hafizeogut/Desktop/sunflower_object_detection/sunflower/labels/train.cache
+[34m[1mtrain: [39m[22mScanning /home/hafizeogut/Desktop/sunflower_object_detection/sunflower/labels/train... 158 images, 0 backgrounds, 0 corrupt: 10
+[34m[1mval: [39m[22mScanning /home/hafizeogut/Desktop/sunflower_object_detection/sunflower/labels/val... 12 images, 0 backgrounds, 0 corrupt: 100%|██
+[34m[1mval: [39m[22mNew cache created: /home/hafizeogut/Desktop/sunflower_object_detection/sunflower/labels/val.cache
+Plotting labels to runs/detect/train19/labels.jpg...
+[34m[1moptimizer:[39m[22m 'optimizer=auto' found, ignoring 'lr0=0.01' and 'momentum=0.937' and determining best 'optimizer', 'lr0' and 'momentum' automatically...
+[34m[1moptimizer:[39m[22m AdamW(lr=0.0005, momentum=0.9) with parameter groups 57 weight(decay=0.0), 64 weight(decay=0.0005), 63 bias(decay=0.0)
+[34m[1mTensorBoard: [39m[22mmodel graph visualization added ✅
+Image sizes 640 train, 640 val
+Using 8 dataloader workers
+Logging results to [1mruns/detect/train19
+Starting training for 50 epochs...
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       1/50      2.23G      2.047      4.307      1.958        120        640:  40%|████      | 4/10 [00:01<00:01,  4.11it/s]
+       1/50      2.41G      1.925      4.295      1.901         85        640: 100%|██████████| 10/10 [00:01<00:00,  5.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00,  8.23it/s
+       2/50      2.11G      1.809      4.222        1.8         65        640:  20%|██        | 2/10 [00:00<00:00, 11.26it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37          1      0.027      0.514      0.257
+       2/50       2.5G      1.775       4.11      1.742         83        640: 100%|██████████| 10/10 [00:00<00:00, 11.54it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 17.93it/s
+       3/50      2.52G      1.698      3.535      1.678         94        640: 100%|██████████| 10/10 [00:00<00:00, 11.80it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 30.75it/s
+       4/50      2.12G      1.503      3.096      1.598         88        640:   0%|          | 0/10 [00:00<?, ?it/s]
+                   all         12         37      0.365      0.514      0.453      0.273
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       4/50      2.49G      1.678      2.603      1.668         71        640: 100%|██████████| 10/10 [00:00<00:00, 11.98it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.19it/s
+       5/50       2.4G      1.609      2.082      1.612         92        640: 100%|██████████| 10/10 [00:00<00:00, 12.06it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.08it/s
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.797      0.432      0.687       0.37
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+       6/50      2.45G      1.614      1.899      1.542         78        640: 100%|██████████| 10/10 [00:00<00:00, 11.56it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 25.13it/s
+       7/50      2.33G      1.554      1.833      1.524         57        640:  80%|████████  | 8/10 [00:00<00:00, 10.96it/s]
+                   all         12         37       0.77      0.432      0.724      0.396
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.618      0.569       0.67      0.356
+       7/50      2.33G      1.554      1.795      1.525         84        640: 100%|██████████| 10/10 [00:00<00:00, 11.36it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 27.77it/s
+       8/50      2.52G      1.502      1.652      1.525        105        640: 100%|██████████| 10/10 [00:00<00:00, 12.00it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.15it/s
+       9/50       2.3G      1.604      1.508      1.506        101        640:  60%|██████    | 6/10 [00:00<00:00, 11.80it/s]
+                   all         12         37      0.684      0.676      0.709      0.404
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37        0.8      0.595      0.696      0.408
+       9/50      2.59G      1.538      1.546      1.502         61        640: 100%|██████████| 10/10 [00:00<00:00, 11.92it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.22it/s
+      10/50      2.59G      1.579      1.521      1.512         75        640: 100%|██████████| 10/10 [00:00<00:00, 12.00it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.97it/s
+      11/50      2.15G      1.451      1.423      1.489        100        640:  40%|████      | 4/10 [00:00<00:00, 11.81it/s]
+                   all         12         37      0.712      0.668      0.713      0.407
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.672      0.784      0.773      0.432
+      11/50      2.44G      1.428      1.437      1.465         45        640: 100%|██████████| 10/10 [00:00<00:00, 11.99it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.70it/s
+      12/50      2.49G      1.448      1.425       1.48         60        640: 100%|██████████| 10/10 [00:00<00:00, 12.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 24.85it/s
+      13/50      2.09G       1.26      1.583      1.561         51        640:   0%|          | 0/10 [00:00<?, ?it/s]
+                   all         12         37      0.883      0.622      0.784       0.47
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      13/50      2.47G      1.416      1.465      1.478        124        640: 100%|██████████| 10/10 [00:00<00:00, 12.13it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.79it/s
+      14/50      2.47G      1.431      1.443       1.43        139        640: 100%|██████████| 10/10 [00:00<00:00, 11.76it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.65it/s
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37       0.81      0.577      0.735      0.401
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      15/50       2.5G      1.378      1.377      1.429         86        640: 100%|██████████| 10/10 [00:00<00:00, 12.26it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 25.72it/s
+      16/50      2.51G      1.458       1.33      1.431        110        640: 100%|██████████| 10/10 [00:00<00:00, 11.85it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.02it/s
+                   all         12         37      0.794      0.676      0.724      0.407
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.698       0.73      0.761      0.362
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      17/50      2.44G      1.456      1.319      1.419        112        640: 100%|██████████| 10/10 [00:00<00:00, 12.09it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 21.48it/s
+      18/50      2.11G      1.363      1.301      1.414         57        640:  80%|████████  | 8/10 [00:00<00:00, 12.26it/s]
+                   all         12         37      0.707      0.716      0.743      0.396
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.686      0.838      0.774      0.448
+      18/50      2.39G       1.37      1.288      1.404         93        640: 100%|██████████| 10/10 [00:00<00:00, 12.22it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 22.94it/s
+      19/50      2.48G      1.502      1.325      1.411         86        640: 100%|██████████| 10/10 [00:00<00:00, 11.81it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.50it/s
+      20/50      2.18G      1.443      1.235      1.348        158        640:  40%|████      | 4/10 [00:00<00:00, 11.85it/s]
+                   all         12         37      0.643      0.875      0.773      0.445
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.794      0.757      0.784      0.444
+      20/50      2.47G       1.36      1.259      1.349        113        640: 100%|██████████| 10/10 [00:00<00:00, 12.06it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 27.79it/s
+      21/50       2.5G      1.424      1.254      1.388        128        640: 100%|██████████| 10/10 [00:00<00:00, 12.12it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 27.44it/s
+      22/50      2.21G      1.398      1.214      1.372         88        640:  40%|████      | 4/10 [00:00<00:00, 12.07it/s]
+                   all         12         37      0.675      0.892       0.79      0.451
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37        0.6      0.865      0.767      0.448
+      22/50      2.49G      1.385      1.218      1.374         72        640: 100%|██████████| 10/10 [00:00<00:00, 12.08it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 27.20it/s
+      23/50      2.39G       1.33      1.209       1.35         62        640: 100%|██████████| 10/10 [00:00<00:00, 12.30it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.75it/s
+      24/50      2.15G       1.45      1.213      1.367        124        640:  20%|██        | 2/10 [00:00<00:00, 11.49it/s]
+                   all         12         37      0.544      0.784       0.73       0.42
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      24/50      2.55G      1.332      1.171       1.35         99        640: 100%|██████████| 10/10 [00:00<00:00, 12.18it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.28it/s
+      25/50      2.49G      1.336      1.131      1.318        113        640: 100%|██████████| 10/10 [00:00<00:00, 12.17it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.64it/s
+      26/50      2.12G      1.436      1.156      1.357        111        640:   0%|          | 0/10 [00:00<?, ?it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.698       0.73      0.793      0.441
+      26/50      2.41G       1.27      1.123      1.324        123        640: 100%|██████████| 10/10 [00:00<00:00, 12.26it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.43it/s
+      27/50      2.36G      1.248      1.113      1.315         77        640: 100%|██████████| 10/10 [00:00<00:00, 12.21it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.36it/s
+                   all         12         37      0.627      0.784      0.746       0.39
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.653      0.784      0.754      0.367
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      28/50      2.51G      1.285      1.096      1.329        108        640: 100%|██████████| 10/10 [00:00<00:00, 12.01it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.25it/s
+      29/50       2.5G      1.251      1.091      1.315         92        640: 100%|██████████| 10/10 [00:00<00:00, 12.24it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.28it/s
+                   all         12         37       0.67      0.823       0.77      0.426
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.688      0.784      0.808      0.453
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      30/50      2.45G      1.265      1.107      1.292        140        640: 100%|██████████| 10/10 [00:00<00:00, 12.11it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.21it/s
+      31/50      2.18G      1.278      1.102      1.307        135        640:  80%|████████  | 8/10 [00:00<00:00, 11.91it/s]
+                   all         12         37      0.776      0.749      0.787      0.432
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.748      0.804      0.787      0.429
+      31/50      2.47G      1.247      1.099      1.303         61        640: 100%|██████████| 10/10 [00:00<00:00, 12.23it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.41it/s
+      32/50      2.46G      1.196      1.085      1.286        131        640: 100%|██████████| 10/10 [00:00<00:00, 12.16it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.90it/s
+      33/50       2.1G       1.17     0.9986      1.253        101        640:  80%|████████  | 8/10 [00:00<00:00, 12.13it/s]
+                   all         12         37      0.748      0.838       0.78      0.443
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.754      0.829      0.785      0.448
+      33/50       2.5G      1.185      1.003      1.265         68        640: 100%|██████████| 10/10 [00:00<00:00, 12.28it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 26.98it/s
+      34/50       2.4G      1.281      1.036      1.282         75        640: 100%|██████████| 10/10 [00:00<00:00, 12.15it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.10it/s
+      35/50      2.29G      1.256      1.128      1.291        104        640:  60%|██████    | 6/10 [00:00<00:00, 11.90it/s]
+                   all         12         37      0.759      0.811      0.787      0.441
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.813       0.82      0.816      0.423
+      35/50      2.58G      1.261      1.071      1.273        145        640: 100%|██████████| 10/10 [00:00<00:00, 12.05it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.41it/s
+      36/50      2.46G      1.172      1.046       1.28         75        640: 100%|██████████| 10/10 [00:00<00:00, 12.23it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.23it/s
+      37/50      2.31G      1.236       1.03      1.263         69        640:  20%|██        | 2/10 [00:00<00:00, 11.61it/s]
+                   all         12         37      0.784      0.811      0.794      0.419
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      37/50       2.6G      1.161     0.9992      1.239         66        640: 100%|██████████| 10/10 [00:00<00:00, 12.27it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.58it/s
+      38/50      2.47G      1.215      1.011      1.263        160        640: 100%|██████████| 10/10 [00:00<00:00, 12.17it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.62it/s
+      39/50      2.09G      0.978      1.001       1.23         70        640:  20%|██        | 2/10 [00:00<00:00, 12.67it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.798      0.703       0.78      0.421
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      39/50      2.49G      1.209      1.036       1.27         95        640: 100%|██████████| 10/10 [00:00<00:00, 12.14it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.55it/s
+      40/50      2.36G      1.192     0.9673      1.242         66        640: 100%|██████████| 10/10 [00:00<00:00, 11.95it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 26.78it/s
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.734      0.821      0.785      0.426
+Closing dataloader mosaic
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      41/50       2.4G       1.28       1.29      1.286         52        640: 100%|██████████| 10/10 [00:01<00:00,  8.82it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.84it/s
+      42/50       2.1G      1.116      1.106      1.207         62        640:  40%|████      | 4/10 [00:00<00:00, 12.23it/s]
+                   all         12         37       0.72      0.833       0.78       0.42
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.743       0.73      0.783       0.41
+      42/50      2.49G       1.24      1.152      1.277         51        640: 100%|██████████| 10/10 [00:00<00:00, 12.21it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 30.15it/s
+      43/50      2.45G      1.203      1.139       1.28        109        640: 100%|██████████| 10/10 [00:00<00:00, 12.38it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.50it/s
+      44/50      2.15G      1.103      1.152      1.251         47        640:  20%|██        | 2/10 [00:00<00:00, 11.67it/s]
+                   all         12         37      0.724      0.781      0.781      0.419
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      44/50      2.44G      1.182      1.149       1.27         80        640: 100%|██████████| 10/10 [00:00<00:00, 12.07it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.20it/s
+      45/50      2.51G      1.198      1.134      1.267         69        640: 100%|██████████| 10/10 [00:00<00:00, 12.37it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.92it/s
+      46/50       2.1G      1.251      1.089       1.23         74        640:  20%|██        | 2/10 [00:00<00:00, 11.63it/s]
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.712      0.801      0.764      0.431
+      46/50      2.49G      1.186      1.083      1.243         27        640: 100%|██████████| 10/10 [00:00<00:00, 12.25it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.49it/s
+      47/50      2.44G      1.101       1.07       1.19        106        640: 100%|██████████| 10/10 [00:00<00:00, 12.48it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 28.31it/s
+  0%|          | 0/10 [00:00<?, ?it/s]
+                   all         12         37      0.714      0.757      0.743      0.426
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37      0.739      0.757       0.77      0.441
+      48/50      2.38G      1.148      1.059      1.245        113        640: 100%|██████████| 10/10 [00:00<00:00, 12.14it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 27.90it/s
+      49/50      2.49G      1.135      1.064      1.222         66        640: 100%|██████████| 10/10 [00:00<00:00, 12.35it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 29.32it/s
+                   all         12         37       0.73       0.73      0.772      0.432
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+                   all         12         37        0.7      0.757      0.774      0.436
+      Epoch    GPU_mem   box_loss   cls_loss   dfl_loss  Instances       Size
+      50/50      2.49G      1.144      1.014      1.222         41        640: 100%|██████████| 10/10 [00:00<00:00, 12.28it/s]
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 27.92it/s
+                 Class     Images  Instances      Box(P          R      mAP50  mAP50-95): 100%|██████████| 1/1 [00:00<00:00, 30.45it/s
+                   all         12         37      0.706      0.777      0.775      0.427
+50 epochs completed in 0.016 hours.
+Optimizer stripped from runs/detect/train19/weights/last.pt, 6.3MB
+Optimizer stripped from runs/detect/train19/weights/best.pt, 6.3MB
+Validating runs/detect/train19/weights/best.pt...
+Ultralytics YOLOv8.2.60 🚀 Python-3.10.12 torch-2.3.1+cu121 CUDA:0 (NVIDIA GeForce RTX 4070 Laptop GPU, 7940MiB)
+Model summary (fused): 168 layers, 3,008,768 parameters, 0 gradients, 8.1 GFLOPs
+                   all         12         37      0.882      0.622      0.784       0.47
+             sunflower         12         37      0.882      0.622      0.784       0.47
+Speed: 0.2ms preprocess, 1.0ms inference, 0.0ms loss, 0.3ms postprocess per image
+Results saved to [1mruns/detect/train19

@@ -1,0 +1,181 @@
+2024-07-25 17:42:22,209 INFO    StreamThr :52566 [internal.py:wandb_internal():85] W&B internal server running at pid: 52566, started at: 2024-07-25 17:42:22.207338
+2024-07-25 17:42:22,214 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: status
+2024-07-25 17:42:22,220 INFO    WriterThread:52566 [datastore.py:open_for_write():87] open: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/run-ccaqaa7w.wandb
+2024-07-25 17:42:22,223 DEBUG   SenderThread:52566 [sender.py:send():379] send: header
+2024-07-25 17:42:22,230 DEBUG   SenderThread:52566 [sender.py:send():379] send: run
+2024-07-25 17:42:22,922 INFO    SenderThread:52566 [dir_watcher.py:__init__():211] watching files in: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files
+2024-07-25 17:42:22,923 INFO    SenderThread:52566 [sender.py:_start_run_threads():1188] run started: ccaqaa7w with start time 1721918542.207827
+2024-07-25 17:42:22,936 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: check_version
+2024-07-25 17:42:22,936 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: check_version
+2024-07-25 17:42:23,304 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: run_start
+2024-07-25 17:42:23,314 DEBUG   HandlerThread:52566 [system_info.py:__init__():26] System info init
+2024-07-25 17:42:23,314 DEBUG   HandlerThread:52566 [system_info.py:__init__():41] System info init done
+2024-07-25 17:42:23,314 INFO    HandlerThread:52566 [system_monitor.py:start():194] Starting system monitor
+2024-07-25 17:42:23,314 INFO    SystemMonitor:52566 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-25 17:42:23,315 INFO    HandlerThread:52566 [system_monitor.py:probe():214] Collecting system info
+2024-07-25 17:42:23,315 INFO    SystemMonitor:52566 [interfaces.py:start():188] Started cpu monitoring
+2024-07-25 17:42:23,315 INFO    SystemMonitor:52566 [interfaces.py:start():188] Started disk monitoring
+2024-07-25 17:42:23,316 INFO    SystemMonitor:52566 [interfaces.py:start():188] Started gpu monitoring
+2024-07-25 17:42:23,317 INFO    SystemMonitor:52566 [interfaces.py:start():188] Started memory monitoring
+2024-07-25 17:42:23,319 INFO    SystemMonitor:52566 [interfaces.py:start():188] Started network monitoring
+2024-07-25 17:42:23,330 DEBUG   HandlerThread:52566 [system_info.py:probe():152] Probing system
+2024-07-25 17:42:23,331 DEBUG   HandlerThread:52566 [system_info.py:_probe_git():137] Probing git
+2024-07-25 17:42:23,336 DEBUG   HandlerThread:52566 [system_info.py:_probe_git():145] Probing git done
+2024-07-25 17:42:23,336 DEBUG   HandlerThread:52566 [system_info.py:probe():200] Probing system done
+2024-07-25 17:42:23,336 DEBUG   HandlerThread:52566 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-44-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-07-25T14:42:23.330163', 'startedAt': '2024-07-25T14:42:22.192685', 'docker': None, 'cuda': None, 'args': ('train', 'model=yolov8n.pt', 'data=sunflower.yaml', 'epochs=100', 'imgsz=640'), 'state': 'running', 'program': '/home/hafizeogut/.local/bin/yolo', 'codePathLocal': None, 'git': {'remote': 'https://github.com/hafizeogut/sunflower_object_detection.git', 'commit': 'a49f0a87cfa15ae5a81a51297b5023cb775fc79f'}, 'email': 'hafizecemileogut@gmail.com', 'root': '/home/hafizeogut/Desktop/sunflower_object_detection', 'host': 'hafizeogut', 'username': 'hafizeogut', 'executable': '/usr/bin/python3', 'cpu_count': 14, 'cpu_count_logical': 20, 'cpu_freq': {'current': 1147.39525, 'min': 400.0, 'max': 4800.0}, 'cpu_freq_per_core': [{'current': 785.771, 'min': 400.0, 'max': 5200.0}, {'current': 400.0, 'min': 400.0, 'max': 5200.0}, {'current': 849.486, 'min': 400.0, 'max': 5200.0}, {'current': 400.0, 'min': 400.0, 'max': 5200.0}, {'current': 400.096, 'min': 400.0, 'max': 5400.0}, {'current': 400.0, 'min': 400.0, 'max': 5400.0}, {'current': 1404.245, 'min': 400.0, 'max': 5400.0}, {'current': 555.819, 'min': 400.0, 'max': 5400.0}, {'current': 1134.028, 'min': 400.0, 'max': 5200.0}, {'current': 474.196, 'min': 400.0, 'max': 5200.0}, {'current': 1388.795, 'min': 400.0, 'max': 5200.0}, {'current': 400.0, 'min': 400.0, 'max': 5200.0}, {'current': 2181.981, 'min': 400.0, 'max': 4100.0}, {'current': 1571.777, 'min': 400.0, 'max': 4100.0}, {'current': 1737.736, 'min': 400.0, 'max': 4100.0}, {'current': 425.724, 'min': 400.0, 'max': 4100.0}, {'current': 399.934, 'min': 400.0, 'max': 4100.0}, {'current': 402.285, 'min': 400.0, 'max': 4100.0}, {'current': 400.0, 'min': 400.0, 'max': 4100.0}, {'current': 752.853, 'min': 400.0, 'max': 4100.0}], 'disk': {'/': {'total': 937.3305015563965, 'used': 32.349613189697266}}, 'gpu': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'memory_total': 8585740288}], 'memory': {'total': 31.044246673583984}}
+2024-07-25 17:42:23,336 INFO    HandlerThread:52566 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-25 17:42:23,336 INFO    HandlerThread:52566 [system_monitor.py:probe():227] Publishing system info
+2024-07-25 17:42:23,337 INFO    HandlerThread:52566 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-25 17:42:23,345 DEBUG   SenderThread:52566 [sender.py:send():379] send: files
+2024-07-25 17:42:23,345 INFO    SenderThread:52566 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-25 17:42:23,450 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-25 17:42:23,450 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: python_packages
+2024-07-25 17:42:23,450 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-25 17:42:23,450 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: stop_status
+2024-07-25 17:42:23,451 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:42:23,721 DEBUG   SenderThread:52566 [sender.py:send():379] send: telemetry
+2024-07-25 17:42:23,923 INFO    Thread-12 :52566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/requirements.txt
+2024-07-25 17:42:23,923 INFO    Thread-12 :52566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/output.log
+2024-07-25 17:42:23,923 INFO    Thread-12 :52566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/wandb-metadata.json
+2024-07-25 17:42:24,092 DEBUG   SenderThread:52566 [sender.py:send():379] send: telemetry
+2024-07-25 17:42:24,129 INFO    wandb-upload_0:52566 [upload_job.py:push():130] Uploaded file /tmp/tmpl1ycn0sfwandb/jx3d9q6h-wandb-metadata.json
+2024-07-25 17:42:24,201 DEBUG   SenderThread:52566 [sender.py:send():379] send: exit
+2024-07-25 17:42:24,201 INFO    SenderThread:52566 [sender.py:send_exit():586] handling exit code: 255
+2024-07-25 17:42:24,201 INFO    SenderThread:52566 [sender.py:send_exit():588] handling runtime: 0
+2024-07-25 17:42:24,201 INFO    SenderThread:52566 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:42:24,201 INFO    SenderThread:52566 [sender.py:send_exit():594] send defer
+2024-07-25 17:42:24,201 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:24,201 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-25 17:42:24,201 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:24,201 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-25 17:42:24,201 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 1
+2024-07-25 17:42:24,201 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:24,201 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-25 17:42:24,201 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:24,201 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-25 17:42:24,201 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 2
+2024-07-25 17:42:24,202 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:24,202 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-25 17:42:24,202 INFO    HandlerThread:52566 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-25 17:42:24,202 DEBUG   SystemMonitor:52566 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-25 17:42:24,202 DEBUG   SystemMonitor:52566 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-25 17:42:24,202 DEBUG   SystemMonitor:52566 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-25 17:42:24,203 INFO    HandlerThread:52566 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-25 17:42:24,203 INFO    HandlerThread:52566 [interfaces.py:finish():200] Joined disk monitor
+2024-07-25 17:42:24,236 INFO    HandlerThread:52566 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-25 17:42:24,236 INFO    HandlerThread:52566 [interfaces.py:finish():200] Joined memory monitor
+2024-07-25 17:42:24,236 INFO    HandlerThread:52566 [interfaces.py:finish():200] Joined network monitor
+2024-07-25 17:42:24,236 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:24,236 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-25 17:42:24,236 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 3
+2024-07-25 17:42:24,236 DEBUG   SenderThread:52566 [sender.py:send():379] send: stats
+2024-07-25 17:42:24,236 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:24,236 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-25 17:42:24,237 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:24,237 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-25 17:42:24,237 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 4
+2024-07-25 17:42:24,237 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:24,237 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-25 17:42:24,237 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:24,237 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-25 17:42:24,237 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 5
+2024-07-25 17:42:24,237 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:24,237 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-25 17:42:24,237 DEBUG   SenderThread:52566 [sender.py:send():379] send: summary
+2024-07-25 17:42:24,237 INFO    SenderThread:52566 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:42:24,237 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:24,237 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-25 17:42:24,237 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 6
+2024-07-25 17:42:24,238 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:24,238 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-25 17:42:24,238 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:24,238 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-25 17:42:24,240 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:42:24,466 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 7
+2024-07-25 17:42:24,467 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:24,467 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-25 17:42:24,467 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:24,467 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-25 17:42:24,923 INFO    Thread-12 :52566 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/config.yaml
+2024-07-25 17:42:24,924 INFO    Thread-12 :52566 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/wandb-summary.json
+2024-07-25 17:42:25,202 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-25 17:42:25,924 INFO    Thread-12 :52566 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/output.log
+2024-07-25 17:42:26,229 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 8
+2024-07-25 17:42:26,229 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: poll_exit
+2024-07-25 17:42:26,229 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:26,230 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-25 17:42:26,230 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:26,230 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-25 17:42:26,230 INFO    SenderThread:52566 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-25 17:42:26,230 INFO    SenderThread:52566 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-25 17:42:26,230 WARNING SenderThread:52566 [job_builder.py:_log_if_verbose():274] No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2024-07-25 17:42:26,230 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 9
+2024-07-25 17:42:26,230 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:26,230 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-25 17:42:26,230 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:26,230 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-25 17:42:26,230 INFO    SenderThread:52566 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-25 17:42:26,924 INFO    Thread-12 :52566 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/output.log
+2024-07-25 17:42:26,924 INFO    SenderThread:52566 [dir_watcher.py:finish():388] scan: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files
+2024-07-25 17:42:26,924 INFO    SenderThread:52566 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/output.log output.log
+2024-07-25 17:42:26,925 INFO    SenderThread:52566 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/wandb-summary.json wandb-summary.json
+2024-07-25 17:42:26,925 INFO    SenderThread:52566 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/config.yaml config.yaml
+2024-07-25 17:42:26,925 INFO    SenderThread:52566 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/requirements.txt requirements.txt
+2024-07-25 17:42:26,926 INFO    SenderThread:52566 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/wandb-metadata.json wandb-metadata.json
+2024-07-25 17:42:26,927 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 10
+2024-07-25 17:42:26,927 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:26,927 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-25 17:42:26,930 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:26,930 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-25 17:42:26,930 INFO    SenderThread:52566 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-25 17:42:27,230 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-25 17:42:27,232 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: poll_exit
+2024-07-25 17:42:27,392 INFO    wandb-upload_1:52566 [upload_job.py:push():130] Uploaded file /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/wandb-summary.json
+2024-07-25 17:42:27,507 INFO    wandb-upload_0:52566 [upload_job.py:push():130] Uploaded file /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/output.log
+2024-07-25 17:42:27,646 INFO    wandb-upload_3:52566 [upload_job.py:push():130] Uploaded file /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/requirements.txt
+2024-07-25 17:42:27,677 INFO    wandb-upload_2:52566 [upload_job.py:push():130] Uploaded file /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/files/config.yaml
+2024-07-25 17:42:27,878 INFO    Thread-11 (_thread_body):52566 [sender.py:transition_state():614] send defer: 11
+2024-07-25 17:42:27,879 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:27,879 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-25 17:42:27,880 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:27,881 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-25 17:42:27,881 INFO    SenderThread:52566 [file_pusher.py:join():175] waiting for file pusher
+2024-07-25 17:42:27,882 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 12
+2024-07-25 17:42:27,883 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:27,883 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-25 17:42:27,885 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:27,885 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-25 17:42:27,885 INFO    SenderThread:52566 [file_stream.py:finish():601] file stream finish called
+2024-07-25 17:42:28,231 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-25 17:42:28,739 INFO    SenderThread:52566 [file_stream.py:finish():605] file stream finish is done
+2024-07-25 17:42:28,740 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 13
+2024-07-25 17:42:28,740 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: poll_exit
+2024-07-25 17:42:28,741 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:28,742 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-25 17:42:28,743 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:28,744 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-25 17:42:28,744 INFO    SenderThread:52566 [sender.py:transition_state():614] send defer: 14
+2024-07-25 17:42:28,745 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:42:28,746 INFO    HandlerThread:52566 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-25 17:42:28,747 DEBUG   SenderThread:52566 [sender.py:send():379] send: final
+2024-07-25 17:42:28,748 DEBUG   SenderThread:52566 [sender.py:send():379] send: footer
+2024-07-25 17:42:28,749 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:42:28,749 INFO    SenderThread:52566 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-25 17:42:28,751 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-25 17:42:28,752 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: server_info
+2024-07-25 17:42:28,753 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-25 17:42:28,754 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-25 17:42:28,757 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: poll_exit
+2024-07-25 17:42:28,757 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: server_info
+2024-07-25 17:42:28,764 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-25 17:42:28,767 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:42:29,046 DEBUG   SenderThread:52566 [sender.py:send_request():406] send_request: poll_exit
+2024-07-25 17:42:29,047 INFO    MainThread:52566 [wandb_run.py:_footer_history_summary_info():3991] rendering history
+2024-07-25 17:42:29,048 INFO    MainThread:52566 [wandb_run.py:_footer_history_summary_info():4023] rendering summary
+2024-07-25 17:42:29,048 INFO    MainThread:52566 [wandb_run.py:_footer_sync_info():3950] logging synced files
+2024-07-25 17:42:29,049 DEBUG   HandlerThread:52566 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-25 17:42:29,050 INFO    HandlerThread:52566 [handler.py:finish():882] shutting down handler
+2024-07-25 17:42:29,757 INFO    WriterThread:52566 [datastore.py:close():296] close: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_174222-ccaqaa7w/run-ccaqaa7w.wandb
+2024-07-25 17:42:30,047 INFO    SenderThread:52566 [sender.py:finish():1608] shutting down sender
+2024-07-25 17:42:30,047 INFO    SenderThread:52566 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-25 17:42:30,047 INFO    SenderThread:52566 [file_pusher.py:join():175] waiting for file pusher

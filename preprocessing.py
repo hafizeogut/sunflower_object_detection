@@ -43,6 +43,8 @@ def write_to_file(image_dir, label_dir, X):
     os.makedirs(image_dir, exist_ok=True)
     os.makedirs(label_dir, exist_ok=True)
     for image_path in X:
+        #Benim dosya formatım :76-995e92405b6b68b40b_jpg.rf.8ff7e6863350068ffc68b02bf0f4def3.jpg
+        #8ff7e6863350068ffc68b02bf0f4def3.jpg olsaydı img_name = image_path.split("/")[-1].split(".")[0] yeterli olacaktı.
         img_name = image_path.split("/")[-1].split(".")[0] + "."+image_path.split("/")[-1].split(".")[1] +"."+image_path.split("/")[-1].split(".")[2] # Dosya adını al
         
         img_ext = image_path.split("/")[-1].split(".")[-1]  # Dosya uzantısını al
@@ -57,3 +59,16 @@ def write_to_file(image_dir, label_dir, X):
 write_to_file("sunflower/images/train", "sunflower/labels/train", X_train)
 write_to_file("sunflower/images/valid", "sunflower/labels/valid", X_valid)
 write_to_file("sunflower/images/test", "sunflower/labels/test", X_test)
+
+
+# data = {
+#     "path": "../sunflower_object_detection/sunflower",
+#     "train":"images/train",
+#     "val":"images/valid",
+#     "test":"images/test",
+
+#     "names":["sunflower"]
+# }
+
+# with open("sunflower.yaml","w") as file:
+#     yaml.dump(data,file)

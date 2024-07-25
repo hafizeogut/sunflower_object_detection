@@ -1,0 +1,828 @@
+2024-07-25 17:38:12,657 INFO    StreamThr :51720 [internal.py:wandb_internal():85] W&B internal server running at pid: 51720, started at: 2024-07-25 17:38:12.655740
+2024-07-25 17:38:12,660 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status
+2024-07-25 17:38:12,663 INFO    WriterThread:51720 [datastore.py:open_for_write():87] open: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/run-gj5beb6b.wandb
+2024-07-25 17:38:12,665 DEBUG   SenderThread:51720 [sender.py:send():379] send: header
+2024-07-25 17:38:12,669 DEBUG   SenderThread:51720 [sender.py:send():379] send: run
+2024-07-25 17:38:13,376 INFO    SenderThread:51720 [dir_watcher.py:__init__():211] watching files in: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files
+2024-07-25 17:38:13,377 INFO    SenderThread:51720 [sender.py:_start_run_threads():1188] run started: gj5beb6b with start time 1721918292.658353
+2024-07-25 17:38:13,392 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: check_version
+2024-07-25 17:38:13,392 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: check_version
+2024-07-25 17:38:13,777 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: run_start
+2024-07-25 17:38:13,783 DEBUG   HandlerThread:51720 [system_info.py:__init__():26] System info init
+2024-07-25 17:38:13,784 DEBUG   HandlerThread:51720 [system_info.py:__init__():41] System info init done
+2024-07-25 17:38:13,784 INFO    HandlerThread:51720 [system_monitor.py:start():194] Starting system monitor
+2024-07-25 17:38:13,784 INFO    SystemMonitor:51720 [system_monitor.py:_start():158] Starting system asset monitoring threads
+2024-07-25 17:38:13,785 INFO    SystemMonitor:51720 [interfaces.py:start():188] Started cpu monitoring
+2024-07-25 17:38:13,785 INFO    HandlerThread:51720 [system_monitor.py:probe():214] Collecting system info
+2024-07-25 17:38:13,785 INFO    SystemMonitor:51720 [interfaces.py:start():188] Started disk monitoring
+2024-07-25 17:38:13,786 INFO    SystemMonitor:51720 [interfaces.py:start():188] Started gpu monitoring
+2024-07-25 17:38:13,787 INFO    SystemMonitor:51720 [interfaces.py:start():188] Started memory monitoring
+2024-07-25 17:38:13,787 INFO    SystemMonitor:51720 [interfaces.py:start():188] Started network monitoring
+2024-07-25 17:38:13,796 DEBUG   HandlerThread:51720 [system_info.py:probe():152] Probing system
+2024-07-25 17:38:13,797 DEBUG   HandlerThread:51720 [system_info.py:_probe_git():137] Probing git
+2024-07-25 17:38:13,801 DEBUG   HandlerThread:51720 [system_info.py:_probe_git():145] Probing git done
+2024-07-25 17:38:13,801 DEBUG   HandlerThread:51720 [system_info.py:probe():200] Probing system done
+2024-07-25 17:38:13,801 DEBUG   HandlerThread:51720 [system_monitor.py:probe():223] {'os': 'Linux-6.5.0-44-generic-x86_64-with-glibc2.35', 'python': '3.10.12', 'heartbeatAt': '2024-07-25T14:38:13.796082', 'startedAt': '2024-07-25T14:38:12.643541', 'docker': None, 'cuda': None, 'args': ('train', 'model=yolov8n.pt', 'data=sunflower.yaml', 'epochs=50', 'imgsz=640'), 'state': 'running', 'program': '/home/hafizeogut/.local/bin/yolo', 'codePathLocal': None, 'git': {'remote': 'https://github.com/hafizeogut/sunflower_object_detection.git', 'commit': 'a49f0a87cfa15ae5a81a51297b5023cb775fc79f'}, 'email': 'hafizecemileogut@gmail.com', 'root': '/home/hafizeogut/Desktop/sunflower_object_detection', 'host': 'hafizeogut', 'username': 'hafizeogut', 'executable': '/usr/bin/python3', 'cpu_count': 14, 'cpu_count_logical': 20, 'cpu_freq': {'current': 963.7832999999998, 'min': 400.0, 'max': 4800.0}, 'cpu_freq_per_core': [{'current': 1766.815, 'min': 400.0, 'max': 5200.0}, {'current': 1456.402, 'min': 400.0, 'max': 5200.0}, {'current': 607.988, 'min': 400.0, 'max': 5200.0}, {'current': 400.0, 'min': 400.0, 'max': 5200.0}, {'current': 1721.76, 'min': 400.0, 'max': 5400.0}, {'current': 400.0, 'min': 400.0, 'max': 5400.0}, {'current': 807.934, 'min': 400.0, 'max': 5400.0}, {'current': 1734.15, 'min': 400.0, 'max': 5400.0}, {'current': 1052.203, 'min': 400.0, 'max': 5200.0}, {'current': 400.0, 'min': 400.0, 'max': 5200.0}, {'current': 1680.281, 'min': 400.0, 'max': 5200.0}, {'current': 400.0, 'min': 400.0, 'max': 5200.0}, {'current': 400.0, 'min': 400.0, 'max': 4100.0}, {'current': 400.0, 'min': 400.0, 'max': 4100.0}, {'current': 400.0, 'min': 400.0, 'max': 4100.0}, {'current': 400.0, 'min': 400.0, 'max': 4100.0}, {'current': 400.0, 'min': 400.0, 'max': 4100.0}, {'current': 400.0, 'min': 400.0, 'max': 4100.0}, {'current': 400.0, 'min': 400.0, 'max': 4100.0}, {'current': 400.0, 'min': 400.0, 'max': 4100.0}], 'disk': {'/': {'total': 937.3305015563965, 'used': 32.31377029418945}}, 'gpu': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'gpu_count': 1, 'gpu_devices': [{'name': 'NVIDIA GeForce RTX 4070 Laptop GPU', 'memory_total': 8585740288}], 'memory': {'total': 31.044246673583984}}
+2024-07-25 17:38:13,801 INFO    HandlerThread:51720 [system_monitor.py:probe():224] Finished collecting system info
+2024-07-25 17:38:13,801 INFO    HandlerThread:51720 [system_monitor.py:probe():227] Publishing system info
+2024-07-25 17:38:13,801 INFO    HandlerThread:51720 [system_monitor.py:probe():229] Finished publishing system info
+2024-07-25 17:38:13,804 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:38:13,804 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-metadata.json with policy now
+2024-07-25 17:38:13,901 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: python_packages
+2024-07-25 17:38:13,901 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: python_packages
+2024-07-25 17:38:13,944 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-25 17:38:13,944 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:13,944 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: stop_status
+2024-07-25 17:38:14,238 DEBUG   SenderThread:51720 [sender.py:send():379] send: telemetry
+2024-07-25 17:38:14,377 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-metadata.json
+2024-07-25 17:38:14,377 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/requirements.txt
+2024-07-25 17:38:14,377 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:14,572 DEBUG   SenderThread:51720 [sender.py:send():379] send: telemetry
+2024-07-25 17:38:14,682 INFO    wandb-upload_0:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/brhy0zw3-wandb-metadata.json
+2024-07-25 17:38:14,902 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:15,916 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:16,376 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:16,914 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:17,734 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:38:17,906 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:18,377 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:18,915 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:19,908 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:20,378 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:20,907 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:21,483 DEBUG   SenderThread:51720 [sender.py:send():379] send: telemetry
+2024-07-25 17:38:21,483 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:21,483 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:21,709 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:21,909 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:22,230 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:38:22,231 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/labels_1_79f9f3269d9600e5f9d4.jpg with policy now
+2024-07-25 17:38:22,268 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:22,268 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:22,269 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:38:22,269 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/train_batch0_1_a12ac005770e624c3241.jpg with policy now
+2024-07-25 17:38:22,273 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:22,274 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:38:22,274 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/train_batch1_1_b433499d43dd675a6489.jpg with policy now
+2024-07-25 17:38:22,289 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:22,289 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:38:22,289 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/train_batch2_1_b82fe57491ea456de236.jpg with policy now
+2024-07-25 17:38:22,378 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:22,378 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/labels_1_79f9f3269d9600e5f9d4.jpg
+2024-07-25 17:38:22,379 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch2_1_b82fe57491ea456de236.jpg
+2024-07-25 17:38:22,379 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch0_1_a12ac005770e624c3241.jpg
+2024-07-25 17:38:22,379 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch1_1_b433499d43dd675a6489.jpg
+2024-07-25 17:38:22,379 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media
+2024-07-25 17:38:22,379 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images
+2024-07-25 17:38:22,380 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:22,739 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:38:22,908 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:23,229 INFO    wandb-upload_0:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/0ls63tu4-media/images/labels_1_79f9f3269d9600e5f9d4.jpg
+2024-07-25 17:38:23,427 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:23,430 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:23,430 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:23,431 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:23,431 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:23,594 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:23,649 INFO    wandb-upload_2:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/2y2896bf-media/images/train_batch1_1_b433499d43dd675a6489.jpg
+2024-07-25 17:38:23,691 INFO    wandb-upload_1:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/o6b9n80t-media/images/train_batch0_1_a12ac005770e624c3241.jpg
+2024-07-25 17:38:23,766 INFO    wandb-upload_3:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/bun5521v-media/images/train_batch2_1_b82fe57491ea456de236.jpg
+2024-07-25 17:38:23,908 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:24,379 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:24,379 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:24,381 INFO    wandb-upload_0:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/qpu3ca08-media/images/labels_1_79f9f3269d9600e5f9d4.jpg
+2024-07-25 17:38:24,583 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:24,583 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:24,584 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:24,584 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:24,584 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:24,721 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:24,908 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:25,126 INFO    wandb-upload_2:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/obkkjd7n-media/images/train_batch0_1_a12ac005770e624c3241.jpg
+2024-07-25 17:38:25,127 INFO    wandb-upload_1:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/q8qzcklc-media/images/train_batch1_1_b433499d43dd675a6489.jpg
+2024-07-25 17:38:25,379 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:25,675 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:25,675 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:25,675 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:25,676 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:25,676 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:25,741 INFO    wandb-upload_3:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/k22fsyp0-media/images/train_batch2_1_b82fe57491ea456de236.jpg
+2024-07-25 17:38:25,813 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:25,934 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:26,380 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:26,380 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:26,763 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:26,764 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:26,764 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:26,764 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:26,765 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:26,908 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:27,026 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:27,380 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:27,812 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:38:27,892 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:27,892 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:27,892 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:27,893 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:27,893 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:28,026 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:28,038 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:28,381 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:28,381 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:28,901 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-25 17:38:28,902 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: stop_status
+2024-07-25 17:38:29,027 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:29,080 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:29,081 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:29,171 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:29,172 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:29,172 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:29,177 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:29,381 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:30,027 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:30,132 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:30,133 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:30,134 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:30,134 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:30,134 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:30,275 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:30,382 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:30,382 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:31,027 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:31,231 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:31,231 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:31,232 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:31,232 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:31,232 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:31,382 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:31,384 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:32,027 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:32,343 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:32,343 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:32,344 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:32,344 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:32,344 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:32,383 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:32,383 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:32,483 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:32,861 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:38:33,027 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:33,444 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:33,444 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:33,445 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:33,445 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:33,445 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:33,587 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:34,028 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:34,383 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:34,384 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:34,537 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:34,537 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:34,538 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:34,538 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:34,538 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:34,711 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:35,028 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:35,384 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:35,678 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:35,678 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:35,678 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:35,679 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:35,679 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:35,808 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:36,028 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:36,384 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:36,384 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:36,779 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:36,780 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:36,780 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:36,781 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:36,781 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:36,909 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:37,028 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:37,384 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:37,842 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:37,843 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:37,843 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:37,844 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:37,844 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:37,886 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:38:37,977 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:38,075 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:38,385 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:38,385 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:38,992 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:38,993 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:38,994 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:38,994 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:38,995 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:39,076 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:39,083 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:39,385 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:40,036 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:40,037 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:40,037 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:40,038 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:40,038 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:40,076 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:40,183 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:40,385 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:40,386 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:41,076 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:41,192 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:41,194 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:41,197 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:41,198 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:41,198 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:41,290 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:41,386 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:42,076 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:42,252 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:42,253 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:42,254 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:42,254 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:42,254 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:42,381 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:42,386 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:42,386 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:42,925 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:38:43,076 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:43,329 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:43,329 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:43,330 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:43,330 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:43,330 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:43,387 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:43,387 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/config.yaml
+2024-07-25 17:38:43,459 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:43,902 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-25 17:38:43,902 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: stop_status
+2024-07-25 17:38:44,076 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:44,387 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:44,404 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:44,405 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:44,405 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:44,405 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:44,406 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:44,539 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:45,076 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:45,387 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:45,487 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:45,488 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:45,488 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:45,489 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:45,489 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:45,622 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:46,077 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:46,388 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:46,388 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:46,566 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:46,567 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:46,567 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:46,568 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:46,571 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:46,697 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:47,077 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:47,388 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:47,641 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:47,641 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:47,642 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:47,642 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:47,642 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:47,770 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:48,078 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:48,229 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:38:48,389 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:48,389 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:48,712 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:48,713 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:48,713 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:48,713 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:48,714 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:48,841 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:49,088 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:49,389 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:49,778 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:49,779 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:49,779 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:49,780 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:49,780 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:49,908 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:50,077 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:50,389 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:50,389 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:50,847 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:50,848 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:50,848 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:50,848 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:50,848 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:50,978 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:51,098 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:51,390 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:51,930 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:51,931 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:51,931 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:51,931 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:51,932 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:52,059 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:52,180 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:52,390 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:52,390 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:52,997 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:52,997 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:52,998 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:52,998 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:52,998 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:53,130 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:53,221 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:53,248 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:38:53,391 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:54,074 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:54,075 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:54,076 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:54,076 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:54,076 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:54,205 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:54,325 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:54,391 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:54,391 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:55,143 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:55,144 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:55,146 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:55,146 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:55,146 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:55,274 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:55,391 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:55,392 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:56,215 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:56,216 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:56,217 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:56,217 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:56,217 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:56,346 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:56,392 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:56,392 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:56,464 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:57,278 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:57,278 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:57,279 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:57,279 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:57,280 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:57,392 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:57,414 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:57,518 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:58,291 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:38:58,369 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:58,370 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:58,370 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:58,370 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:58,371 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:58,392 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:38:58,393 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:38:58,499 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:58,618 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:38:58,902 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-25 17:38:58,902 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: stop_status
+2024-07-25 17:38:59,448 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:59,448 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:59,449 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:38:59,449 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:38:59,449 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:38:59,605 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:38:59,738 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:00,393 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:00,393 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:00,556 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:00,556 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:00,557 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:00,557 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:00,558 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:00,694 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:00,814 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:01,394 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:01,628 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:01,629 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:01,629 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:01,629 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:01,630 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:01,759 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:01,880 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:02,394 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:02,395 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:02,702 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:02,702 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:02,703 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:02,703 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:02,703 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:02,834 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:02,954 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:03,293 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:39:03,395 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:03,778 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:03,778 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:03,779 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:03,779 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:03,780 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:03,908 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:04,031 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:04,395 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:04,395 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:04,867 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:04,867 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:04,868 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:04,868 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:04,868 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:05,001 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:05,117 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:05,396 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:06,093 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:06,396 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:06,416 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:06,416 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:06,417 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:06,417 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:06,417 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:06,565 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:06,581 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:06,581 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:06,581 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/train_batch400_41_1096752d8f8422aac234.jpg with policy now
+2024-07-25 17:39:06,595 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:06,595 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:06,595 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/train_batch401_41_239e0f354800650b144a.jpg with policy now
+2024-07-25 17:39:06,609 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:06,609 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:06,609 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/train_batch402_41_a77aa89e4f602ae83b76.jpg with policy now
+2024-07-25 17:39:07,093 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:07,396 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:07,398 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch402_41_a77aa89e4f602ae83b76.jpg
+2024-07-25 17:39:07,398 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch401_41_239e0f354800650b144a.jpg
+2024-07-25 17:39:07,398 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch400_41_1096752d8f8422aac234.jpg
+2024-07-25 17:39:07,398 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images
+2024-07-25 17:39:07,573 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:07,574 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:07,574 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:07,574 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:07,575 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:07,704 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:07,771 INFO    wandb-upload_2:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/daiwxnxz-media/images/train_batch402_41_a77aa89e4f602ae83b76.jpg
+2024-07-25 17:39:07,813 INFO    wandb-upload_1:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/u7ognhgr-media/images/train_batch401_41_239e0f354800650b144a.jpg
+2024-07-25 17:39:08,093 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:08,307 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:39:08,310 INFO    wandb-upload_0:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/ltpzolhw-media/images/train_batch400_41_1096752d8f8422aac234.jpg
+2024-07-25 17:39:08,397 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:08,397 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:08,633 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:08,634 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:08,634 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:08,634 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:08,635 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:08,766 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:09,056 INFO    wandb-upload_3:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/qfc2vq3j-media/images/train_batch402_41_a77aa89e4f602ae83b76.jpg
+2024-07-25 17:39:09,104 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:09,126 INFO    wandb-upload_2:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/3lj73kf8-media/images/train_batch401_41_239e0f354800650b144a.jpg
+2024-07-25 17:39:09,397 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:09,673 INFO    wandb-upload_1:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/sp3kzaws-media/images/train_batch400_41_1096752d8f8422aac234.jpg
+2024-07-25 17:39:09,714 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:09,715 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:09,715 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:09,715 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:09,716 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:09,844 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:10,093 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:10,398 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:10,398 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:10,772 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:10,773 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:10,773 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:10,773 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:10,775 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:10,909 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:11,093 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:11,398 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:11,843 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:11,844 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:11,844 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:11,844 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:11,845 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:11,975 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:12,093 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:12,398 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:12,399 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:12,892 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:12,893 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:12,893 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:12,893 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:12,894 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:13,025 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:13,144 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:13,315 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:39:13,399 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:13,788 DEBUG   SystemMonitor:51720 [system_monitor.py:_start():172] Starting system metrics aggregation loop
+2024-07-25 17:39:13,788 DEBUG   SenderThread:51720 [sender.py:send():379] send: stats
+2024-07-25 17:39:13,902 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: stop_status
+2024-07-25 17:39:13,902 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: stop_status
+2024-07-25 17:39:13,967 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:13,968 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:14,099 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:14,164 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:14,164 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:14,165 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:14,237 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:14,399 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:14,399 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:15,046 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:15,047 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:15,047 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:15,048 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:15,048 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:15,177 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:15,296 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:15,399 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:16,111 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:16,112 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:16,112 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:16,112 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:16,113 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:16,247 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:16,365 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:16,400 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:16,400 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:17,365 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:18,072 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:18,072 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:18,073 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:18,073 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:18,073 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/PR_curve_50_23dba8ff6013cb6a3bcc.png with policy now
+2024-07-25 17:39:18,073 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:18,073 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/val_batch0_labels_50_d90810ebda424c25064c.jpg with policy now
+2024-07-25 17:39:18,083 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:18,083 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:18,083 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/val_batch0_pred_50_1fc3776f293d5e7a2eaf.jpg with policy now
+2024-07-25 17:39:18,106 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:18,106 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:18,107 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/F1_curve_50_7f95a630675ad7d37d65.png with policy now
+2024-07-25 17:39:18,132 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:18,133 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:18,133 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/P_curve_50_739c88fac8d430ef2a09.png with policy now
+2024-07-25 17:39:18,157 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:18,157 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:18,157 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/R_curve_50_5ba481664971521fa4ea.png with policy now
+2024-07-25 17:39:18,206 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:18,206 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:18,206 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/confusion_matrix_normalized_50_83a497de25cc2df8dfeb.png with policy now
+2024-07-25 17:39:18,256 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:18,257 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:18,257 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/confusion_matrix_50_b15fd778fb403a5983d4.png with policy now
+2024-07-25 17:39:18,366 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:18,400 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:18,401 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/confusion_matrix_normalized_50_83a497de25cc2df8dfeb.png
+2024-07-25 17:39:18,401 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/val_batch0_labels_50_d90810ebda424c25064c.jpg
+2024-07-25 17:39:18,401 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/P_curve_50_739c88fac8d430ef2a09.png
+2024-07-25 17:39:18,401 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/R_curve_50_5ba481664971521fa4ea.png
+2024-07-25 17:39:18,401 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/PR_curve_50_23dba8ff6013cb6a3bcc.png
+2024-07-25 17:39:18,401 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/F1_curve_50_7f95a630675ad7d37d65.png
+2024-07-25 17:39:18,402 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/val_batch0_pred_50_1fc3776f293d5e7a2eaf.jpg
+2024-07-25 17:39:18,402 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/confusion_matrix_50_b15fd778fb403a5983d4.png
+2024-07-25 17:39:18,402 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images
+2024-07-25 17:39:18,773 INFO    wandb-upload_0:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/teyj3qh6-media/images/PR_curve_50_23dba8ff6013cb6a3bcc.png
+2024-07-25 17:39:18,834 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:18,834 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/images/results_50_7779bd6e4e9af491a430.png with policy now
+2024-07-25 17:39:18,835 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:39:18,876 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:18,918 INFO    wandb-upload_1:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/mxh8z9jj-media/images/F1_curve_50_7f95a630675ad7d37d65.png
+2024-07-25 17:39:19,190 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: log_artifact
+2024-07-25 17:39:19,191 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: log_artifact
+2024-07-25 17:39:19,214 INFO    wandb-upload_6:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/cknkwsz3-media/images/confusion_matrix_normalized_50_83a497de25cc2df8dfeb.png
+2024-07-25 17:39:19,238 INFO    wandb-upload_5:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/2rw7ozyh-media/images/R_curve_50_5ba481664971521fa4ea.png
+2024-07-25 17:39:19,314 INFO    wandb-upload_3:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/3pwmhgdp-media/images/val_batch0_pred_50_1fc3776f293d5e7a2eaf.jpg
+2024-07-25 17:39:19,323 INFO    wandb-upload_2:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/nu3cw9lz-media/images/val_batch0_labels_50_d90810ebda424c25064c.jpg
+2024-07-25 17:39:19,367 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:19,401 INFO    wandb-upload_7:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/3vz2cglc-media/images/confusion_matrix_50_b15fd778fb403a5983d4.png
+2024-07-25 17:39:19,425 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/results_50_7779bd6e4e9af491a430.png
+2024-07-25 17:39:19,427 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images
+2024-07-25 17:39:19,500 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: log_artifact
+2024-07-25 17:39:19,532 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:19,771 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: log_artifact
+2024-07-25 17:39:19,789 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:19,892 INFO    wandb-upload_0:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/k9gp119q-media/images/results_50_7779bd6e4e9af491a430.png
+2024-07-25 17:39:19,968 INFO    wandb-upload_5:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/nujefnpv-media/images/PR_curve_50_23dba8ff6013cb6a3bcc.png
+2024-07-25 17:39:20,065 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: log_artifact
+2024-07-25 17:39:20,078 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:20,105 INFO    wandb-upload_1:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/8ryvo9pw-media/images/R_curve_50_5ba481664971521fa4ea.png
+2024-07-25 17:39:20,138 INFO    wandb-upload_4:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/rrscwlle-media/images/P_curve_50_739c88fac8d430ef2a09.png
+2024-07-25 17:39:20,180 INFO    wandb-upload_3:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/5s2agnrf-media/images/F1_curve_50_7f95a630675ad7d37d65.png
+2024-07-25 17:39:20,367 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: log_artifact
+2024-07-25 17:39:20,370 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:20,418 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:20,420 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/table/curves/Recall-Confidence(B)_table_50_1bbe63b1d042390ff1fb.table.json
+2024-07-25 17:39:20,422 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/table/curves/Precision-Confidence(B)_table_50_ca0e13d446c1c073c494.table.json
+2024-07-25 17:39:20,423 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/table/curves/Precision-Recall(B)_table_50_afdbc8660b5957a3a580.table.json
+2024-07-25 17:39:20,424 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/table/curves/F1-Confidence(B)_table_50_663c018105c758c1dec3.table.json
+2024-07-25 17:39:20,424 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media
+2024-07-25 17:39:20,424 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/table/curves
+2024-07-25 17:39:20,425 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_created():271] file/dir created: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/table
+2024-07-25 17:39:20,425 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: partial_history
+2024-07-25 17:39:20,426 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: server_info
+2024-07-25 17:39:20,828 INFO    wandb-upload_2:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/xsv2y63f-media/images/val_batch0_pred_50_1fc3776f293d5e7a2eaf.jpg
+2024-07-25 17:39:20,902 INFO    wandb-upload_3:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/hl52bj4v-media/table/curves/Recall-Confidence(B)_table_50_1bbe63b1d042390ff1fb.table.json
+2024-07-25 17:39:20,922 INFO    wandb-upload_7:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/5w06k0eq-media/images/confusion_matrix_50_b15fd778fb403a5983d4.png
+2024-07-25 17:39:21,017 INFO    wandb-upload_1:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/5hk6419u-media/images/P_curve_50_739c88fac8d430ef2a09.png
+2024-07-25 17:39:21,019 INFO    wandb-upload_0:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/0f1jbhjb-media/images/confusion_matrix_normalized_50_83a497de25cc2df8dfeb.png
+2024-07-25 17:39:21,108 INFO    wandb-upload_10:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/a95rgaab-media/table/curves/F1-Confidence(B)_table_50_663c018105c758c1dec3.table.json
+2024-07-25 17:39:21,110 INFO    wandb-upload_9:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/7svzzvzh-media/table/curves/Precision-Recall(B)_table_50_afdbc8660b5957a3a580.table.json
+2024-07-25 17:39:21,130 INFO    wandb-upload_8:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/ndd69mdh-media/table/curves/Precision-Confidence(B)_table_50_ca0e13d446c1c073c494.table.json
+2024-07-25 17:39:21,282 INFO    wandb-upload_4:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/w48k8fb7-media/images/results_50_7779bd6e4e9af491a430.png
+2024-07-25 17:39:21,376 INFO    wandb-upload_6:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/enzcefjs-media/images/val_batch0_labels_50_d90810ebda424c25064c.jpg
+2024-07-25 17:39:22,506 INFO    wandb-upload_5:51720 [upload_job.py:push():88] Uploaded file /home/hafizeogut/.local/share/wandb/artifacts/staging/tmp5dhw72mz
+2024-07-25 17:39:23,389 INFO    SenderThread:51720 [sender.py:send_request_log_artifact():1518] logged artifact run_gj5beb6b_model - {'id': 'QXJ0aWZhY3Q6MTAzNTg4MjM4MQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjMyMDk4Nzc0NQ==', 'latestArtifact': None}}
+2024-07-25 17:39:23,390 DEBUG   SenderThread:51720 [sender.py:send():379] send: config
+2024-07-25 17:39:23,390 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: log_artifact
+2024-07-25 17:39:24,633 INFO    wandb-upload_2:51720 [upload_job.py:push():88] Uploaded file /home/hafizeogut/.local/share/wandb/artifacts/staging/tmpvd88zu31
+2024-07-25 17:39:25,387 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-25 17:39:25,648 INFO    SenderThread:51720 [sender.py:send_request_log_artifact():1518] logged artifact run-gj5beb6b-curvesPrecisionRecallB_table - {'id': 'QXJ0aWZhY3Q6MTAzNTg4MjY5NQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjMyMDk4ODAyMA==', 'latestArtifact': None}}
+2024-07-25 17:39:25,649 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:25,649 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:39:25,650 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/table/curves/Precision-Recall(B)_table_50_afdbc8660b5957a3a580.table.json with policy now
+2024-07-25 17:39:25,651 DEBUG   SenderThread:51720 [sender.py:send():379] send: config
+2024-07-25 17:39:25,652 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: log_artifact
+2024-07-25 17:39:26,317 INFO    wandb-upload_7:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/htonabkw-media/table/curves/Precision-Recall(B)_table_50_afdbc8660b5957a3a580.table.json
+2024-07-25 17:39:27,082 INFO    wandb-upload_0:51720 [upload_job.py:push():88] Uploaded file /home/hafizeogut/.local/share/wandb/artifacts/staging/tmpwbvtfhas
+2024-07-25 17:39:28,003 INFO    SenderThread:51720 [sender.py:send_request_log_artifact():1518] logged artifact run-gj5beb6b-curvesF1ConfidenceB_table - {'id': 'QXJ0aWZhY3Q6MTAzNTg4Mjg0Ng==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjMyMDk4ODE0OQ==', 'latestArtifact': None}}
+2024-07-25 17:39:28,004 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:28,004 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/table/curves/F1-Confidence(B)_table_50_663c018105c758c1dec3.table.json with policy now
+2024-07-25 17:39:28,006 DEBUG   SenderThread:51720 [sender.py:send():379] send: config
+2024-07-25 17:39:28,006 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: log_artifact
+2024-07-25 17:39:28,553 INFO    wandb-upload_9:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/iv2o2x91-media/table/curves/F1-Confidence(B)_table_50_663c018105c758c1dec3.table.json
+2024-07-25 17:39:29,233 INFO    wandb-upload_4:51720 [upload_job.py:push():88] Uploaded file /home/hafizeogut/.local/share/wandb/artifacts/staging/tmp0epxp2fw
+2024-07-25 17:39:30,154 INFO    SenderThread:51720 [sender.py:send_request_log_artifact():1518] logged artifact run-gj5beb6b-curvesPrecisionConfidenceB_table - {'id': 'QXJ0aWZhY3Q6MTAzNTg4MzAzNw==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjMyMDk4ODMxNA==', 'latestArtifact': None}}
+2024-07-25 17:39:30,155 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:30,156 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/table/curves/Precision-Confidence(B)_table_50_ca0e13d446c1c073c494.table.json with policy now
+2024-07-25 17:39:30,158 DEBUG   SenderThread:51720 [sender.py:send():379] send: config
+2024-07-25 17:39:30,159 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: log_artifact
+2024-07-25 17:39:30,389 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: keepalive
+2024-07-25 17:39:30,869 INFO    wandb-upload_5:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/a3pmbvkh-media/table/curves/Precision-Confidence(B)_table_50_ca0e13d446c1c073c494.table.json
+2024-07-25 17:39:31,384 INFO    wandb-upload_2:51720 [upload_job.py:push():88] Uploaded file /home/hafizeogut/.local/share/wandb/artifacts/staging/tmpbdc71hkj
+2024-07-25 17:39:32,406 INFO    SenderThread:51720 [sender.py:send_request_log_artifact():1518] logged artifact run-gj5beb6b-curvesRecallConfidenceB_table - {'id': 'QXJ0aWZhY3Q6MTAzNTg4MzIxMQ==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjMyMDk4ODQ2Mg==', 'latestArtifact': None}}
+2024-07-25 17:39:32,407 DEBUG   SenderThread:51720 [sender.py:send():379] send: files
+2024-07-25 17:39:32,407 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file media/table/curves/Recall-Confidence(B)_table_50_1bbe63b1d042390ff1fb.table.json with policy now
+2024-07-25 17:39:32,410 DEBUG   SenderThread:51720 [sender.py:send():379] send: telemetry
+2024-07-25 17:39:32,410 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: server_info
+2024-07-25 17:39:32,421 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:39:32,723 DEBUG   SenderThread:51720 [sender.py:send():379] send: exit
+2024-07-25 17:39:32,724 INFO    SenderThread:51720 [sender.py:send_exit():586] handling exit code: 0
+2024-07-25 17:39:32,724 INFO    SenderThread:51720 [sender.py:send_exit():588] handling runtime: 78
+2024-07-25 17:39:32,732 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:32,733 INFO    SenderThread:51720 [sender.py:send_exit():594] send defer
+2024-07-25 17:39:32,734 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:32,734 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 0
+2024-07-25 17:39:32,735 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:32,736 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 0
+2024-07-25 17:39:32,736 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 1
+2024-07-25 17:39:32,736 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:32,737 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 1
+2024-07-25 17:39:32,738 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:32,738 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 1
+2024-07-25 17:39:32,738 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 2
+2024-07-25 17:39:32,738 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:32,739 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 2
+2024-07-25 17:39:32,739 INFO    HandlerThread:51720 [system_monitor.py:finish():203] Stopping system monitor
+2024-07-25 17:39:32,740 DEBUG   SystemMonitor:51720 [system_monitor.py:_start():179] Finished system metrics aggregation loop
+2024-07-25 17:39:32,741 DEBUG   SystemMonitor:51720 [system_monitor.py:_start():183] Publishing last batch of metrics
+2024-07-25 17:39:32,744 INFO    HandlerThread:51720 [interfaces.py:finish():200] Joined cpu monitor
+2024-07-25 17:39:32,746 INFO    HandlerThread:51720 [interfaces.py:finish():200] Joined disk monitor
+2024-07-25 17:39:32,809 INFO    HandlerThread:51720 [interfaces.py:finish():200] Joined gpu monitor
+2024-07-25 17:39:32,809 INFO    HandlerThread:51720 [interfaces.py:finish():200] Joined memory monitor
+2024-07-25 17:39:32,809 INFO    HandlerThread:51720 [interfaces.py:finish():200] Joined network monitor
+2024-07-25 17:39:32,809 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:32,809 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 2
+2024-07-25 17:39:32,809 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 3
+2024-07-25 17:39:32,810 DEBUG   SenderThread:51720 [sender.py:send():379] send: stats
+2024-07-25 17:39:32,810 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:32,810 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 3
+2024-07-25 17:39:32,811 DEBUG   SenderThread:51720 [sender.py:send():379] send: history
+2024-07-25 17:39:32,811 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: summary_record
+2024-07-25 17:39:32,812 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:32,812 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:32,812 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 3
+2024-07-25 17:39:32,812 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 4
+2024-07-25 17:39:32,812 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:32,812 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 4
+2024-07-25 17:39:32,813 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:32,813 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 4
+2024-07-25 17:39:32,813 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 5
+2024-07-25 17:39:32,813 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:32,813 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 5
+2024-07-25 17:39:32,814 DEBUG   SenderThread:51720 [sender.py:send():379] send: summary
+2024-07-25 17:39:32,814 INFO    SenderThread:51720 [sender.py:_save_file():1454] saving file wandb-summary.json with policy end
+2024-07-25 17:39:32,814 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:32,814 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 5
+2024-07-25 17:39:32,814 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 6
+2024-07-25 17:39:32,814 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:32,814 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 6
+2024-07-25 17:39:32,815 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:32,815 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 6
+2024-07-25 17:39:32,817 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:39:33,053 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 7
+2024-07-25 17:39:33,053 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:33,053 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 7
+2024-07-25 17:39:33,053 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:33,053 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 7
+2024-07-25 17:39:33,082 INFO    wandb-upload_10:51720 [upload_job.py:push():130] Uploaded file /tmp/tmpox5945zbwandb/z9a53cdr-media/table/curves/Recall-Confidence(B)_table_50_1bbe63b1d042390ff1fb.table.json
+2024-07-25 17:39:33,445 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:33,446 INFO    Thread-12 :51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/config.yaml
+2024-07-25 17:39:33,720 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-25 17:39:35,524 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 8
+2024-07-25 17:39:35,524 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: poll_exit
+2024-07-25 17:39:35,525 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:35,526 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 8
+2024-07-25 17:39:35,527 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:35,527 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 8
+2024-07-25 17:39:35,528 INFO    SenderThread:51720 [job_builder.py:build():440] Attempting to build job artifact
+2024-07-25 17:39:35,533 INFO    SenderThread:51720 [job_builder.py:_get_source_type():569] is repo sourced job
+2024-07-25 17:39:35,533 WARNING SenderThread:51720 [job_builder.py:_log_if_verbose():274] No program path found, not creating job artifact. See https://docs.wandb.ai/guides/launch/create-job
+2024-07-25 17:39:35,533 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 9
+2024-07-25 17:39:35,533 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:35,534 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 9
+2024-07-25 17:39:35,534 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:35,535 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 9
+2024-07-25 17:39:35,535 INFO    SenderThread:51720 [dir_watcher.py:finish():358] shutting down directory watcher
+2024-07-25 17:39:35,721 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-25 17:39:36,450 INFO    SenderThread:51720 [dir_watcher.py:_on_file_modified():288] file/dir modified: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:36,451 INFO    SenderThread:51720 [dir_watcher.py:finish():388] scan: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files
+2024-07-25 17:39:36,451 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log output.log
+2024-07-25 17:39:36,452 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json wandb-summary.json
+2024-07-25 17:39:36,453 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/config.yaml config.yaml
+2024-07-25 17:39:36,471 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/requirements.txt requirements.txt
+2024-07-25 17:39:36,472 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-metadata.json wandb-metadata.json
+2024-07-25 17:39:36,493 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/table/curves/Recall-Confidence(B)_table_50_1bbe63b1d042390ff1fb.table.json media/table/curves/Recall-Confidence(B)_table_50_1bbe63b1d042390ff1fb.table.json
+2024-07-25 17:39:36,493 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/table/curves/Precision-Confidence(B)_table_50_ca0e13d446c1c073c494.table.json media/table/curves/Precision-Confidence(B)_table_50_ca0e13d446c1c073c494.table.json
+2024-07-25 17:39:36,494 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/table/curves/Precision-Recall(B)_table_50_afdbc8660b5957a3a580.table.json media/table/curves/Precision-Recall(B)_table_50_afdbc8660b5957a3a580.table.json
+2024-07-25 17:39:36,495 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/table/curves/F1-Confidence(B)_table_50_663c018105c758c1dec3.table.json media/table/curves/F1-Confidence(B)_table_50_663c018105c758c1dec3.table.json
+2024-07-25 17:39:36,495 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/R_curve_50_5ba481664971521fa4ea.png media/images/R_curve_50_5ba481664971521fa4ea.png
+2024-07-25 17:39:36,496 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/val_batch0_labels_50_d90810ebda424c25064c.jpg media/images/val_batch0_labels_50_d90810ebda424c25064c.jpg
+2024-07-25 17:39:36,497 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch2_1_b82fe57491ea456de236.jpg media/images/train_batch2_1_b82fe57491ea456de236.jpg
+2024-07-25 17:39:36,497 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/results_50_7779bd6e4e9af491a430.png media/images/results_50_7779bd6e4e9af491a430.png
+2024-07-25 17:39:36,497 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/P_curve_50_739c88fac8d430ef2a09.png media/images/P_curve_50_739c88fac8d430ef2a09.png
+2024-07-25 17:39:36,498 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/confusion_matrix_50_b15fd778fb403a5983d4.png media/images/confusion_matrix_50_b15fd778fb403a5983d4.png
+2024-07-25 17:39:36,498 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/PR_curve_50_23dba8ff6013cb6a3bcc.png media/images/PR_curve_50_23dba8ff6013cb6a3bcc.png
+2024-07-25 17:39:36,498 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch400_41_1096752d8f8422aac234.jpg media/images/train_batch400_41_1096752d8f8422aac234.jpg
+2024-07-25 17:39:36,498 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch402_41_a77aa89e4f602ae83b76.jpg media/images/train_batch402_41_a77aa89e4f602ae83b76.jpg
+2024-07-25 17:39:36,499 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/confusion_matrix_normalized_50_83a497de25cc2df8dfeb.png media/images/confusion_matrix_normalized_50_83a497de25cc2df8dfeb.png
+2024-07-25 17:39:36,499 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch0_1_a12ac005770e624c3241.jpg media/images/train_batch0_1_a12ac005770e624c3241.jpg
+2024-07-25 17:39:36,500 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/labels_1_79f9f3269d9600e5f9d4.jpg media/images/labels_1_79f9f3269d9600e5f9d4.jpg
+2024-07-25 17:39:36,500 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch1_1_b433499d43dd675a6489.jpg media/images/train_batch1_1_b433499d43dd675a6489.jpg
+2024-07-25 17:39:36,501 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/val_batch0_pred_50_1fc3776f293d5e7a2eaf.jpg media/images/val_batch0_pred_50_1fc3776f293d5e7a2eaf.jpg
+2024-07-25 17:39:36,501 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/train_batch401_41_239e0f354800650b144a.jpg media/images/train_batch401_41_239e0f354800650b144a.jpg
+2024-07-25 17:39:36,501 INFO    SenderThread:51720 [dir_watcher.py:finish():402] scan save: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/media/images/F1_curve_50_7f95a630675ad7d37d65.png media/images/F1_curve_50_7f95a630675ad7d37d65.png
+2024-07-25 17:39:36,501 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 10
+2024-07-25 17:39:36,502 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: poll_exit
+2024-07-25 17:39:36,502 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:36,503 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 10
+2024-07-25 17:39:36,504 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:36,504 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 10
+2024-07-25 17:39:36,504 INFO    SenderThread:51720 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-25 17:39:36,722 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-25 17:39:36,724 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: poll_exit
+2024-07-25 17:39:37,013 INFO    wandb-upload_4:51720 [upload_job.py:push():130] Uploaded file /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/config.yaml
+2024-07-25 17:39:37,016 INFO    wandb-upload_3:51720 [upload_job.py:push():130] Uploaded file /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/requirements.txt
+2024-07-25 17:39:37,018 INFO    wandb-upload_6:51720 [upload_job.py:push():130] Uploaded file /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/wandb-summary.json
+2024-07-25 17:39:37,025 INFO    wandb-upload_0:51720 [upload_job.py:push():130] Uploaded file /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/files/output.log
+2024-07-25 17:39:37,226 INFO    Thread-11 (_thread_body):51720 [sender.py:transition_state():614] send defer: 11
+2024-07-25 17:39:37,227 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:37,227 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 11
+2024-07-25 17:39:37,229 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:37,230 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 11
+2024-07-25 17:39:37,230 INFO    SenderThread:51720 [file_pusher.py:join():175] waiting for file pusher
+2024-07-25 17:39:37,241 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 12
+2024-07-25 17:39:37,241 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:37,242 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 12
+2024-07-25 17:39:37,242 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:37,243 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 12
+2024-07-25 17:39:37,243 INFO    SenderThread:51720 [file_stream.py:finish():601] file stream finish called
+2024-07-25 17:39:37,724 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-25 17:39:38,038 INFO    SenderThread:51720 [file_stream.py:finish():605] file stream finish is done
+2024-07-25 17:39:38,038 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 13
+2024-07-25 17:39:38,039 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: poll_exit
+2024-07-25 17:39:38,040 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:38,040 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 13
+2024-07-25 17:39:38,040 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: status_report
+2024-07-25 17:39:38,042 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:38,042 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 13
+2024-07-25 17:39:38,043 INFO    SenderThread:51720 [sender.py:transition_state():614] send defer: 14
+2024-07-25 17:39:38,043 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: defer
+2024-07-25 17:39:38,043 INFO    HandlerThread:51720 [handler.py:handle_request_defer():184] handle defer: 14
+2024-07-25 17:39:38,045 DEBUG   SenderThread:51720 [sender.py:send():379] send: final
+2024-07-25 17:39:38,045 DEBUG   SenderThread:51720 [sender.py:send():379] send: footer
+2024-07-25 17:39:38,045 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: defer
+2024-07-25 17:39:38,046 INFO    SenderThread:51720 [sender.py:send_request_defer():610] handle sender defer: 14
+2024-07-25 17:39:38,048 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: poll_exit
+2024-07-25 17:39:38,049 DEBUG   SenderThread:51720 [sender.py:send_request():406] send_request: poll_exit
+2024-07-25 17:39:38,052 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: internal_messages
+2024-07-25 17:39:38,054 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: get_summary
+2024-07-25 17:39:38,055 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: sampled_history
+2024-07-25 17:39:38,058 DEBUG   HandlerThread:51720 [handler.py:handle_request():158] handle_request: shutdown
+2024-07-25 17:39:38,058 INFO    HandlerThread:51720 [handler.py:finish():882] shutting down handler
+2024-07-25 17:39:39,049 INFO    WriterThread:51720 [datastore.py:close():296] close: /home/hafizeogut/Desktop/sunflower_object_detection/wandb/run-20240725_173812-gj5beb6b/run-gj5beb6b.wandb
+2024-07-25 17:39:39,050 INFO    SenderThread:51720 [sender.py:finish():1608] shutting down sender
+2024-07-25 17:39:39,051 INFO    SenderThread:51720 [file_pusher.py:finish():169] shutting down file pusher
+2024-07-25 17:39:39,051 INFO    SenderThread:51720 [file_pusher.py:join():175] waiting for file pusher

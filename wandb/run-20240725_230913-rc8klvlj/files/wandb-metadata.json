@@ -1,0 +1,156 @@
+{
+    "os": "Linux-6.5.0-44-generic-x86_64-with-glibc2.35",
+    "python": "3.10.12",
+    "heartbeatAt": "2024-07-25T20:09:15.118271",
+    "startedAt": "2024-07-25T20:09:13.442769",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "train",
+        "model=yolov8s.pt",
+        "data=sunflower.yaml",
+        "epochs=80",
+        "imgsz=640",
+        "name",
+        "=",
+        "yolov8s_sunflower"
+    ],
+    "state": "running",
+    "program": "/home/hafizeogut/.local/bin/yolo",
+    "codePathLocal": null,
+    "git": {
+        "remote": "https://github.com/hafizeogut/sunflower_object_detection.git",
+        "commit": "a49f0a87cfa15ae5a81a51297b5023cb775fc79f"
+    },
+    "email": "hafizecemileogut@gmail.com",
+    "root": "/home/hafizeogut/Desktop/sunflower_object_detection",
+    "host": "hafizeogut",
+    "username": "hafizeogut",
+    "executable": "/usr/bin/python3",
+    "cpu_count": 14,
+    "cpu_count_logical": 20,
+    "cpu_freq": {
+        "current": 732.63095,
+        "min": 400.0,
+        "max": 4800.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 599.746,
+            "min": 400.0,
+            "max": 5200.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5200.0
+        },
+        {
+            "current": 901.294,
+            "min": 400.0,
+            "max": 5200.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5200.0
+        },
+        {
+            "current": 1434.091,
+            "min": 400.0,
+            "max": 5400.0
+        },
+        {
+            "current": 1350.522,
+            "min": 400.0,
+            "max": 5400.0
+        },
+        {
+            "current": 399.905,
+            "min": 400.0,
+            "max": 5400.0
+        },
+        {
+            "current": 587.862,
+            "min": 400.0,
+            "max": 5400.0
+        },
+        {
+            "current": 1329.173,
+            "min": 400.0,
+            "max": 5200.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5200.0
+        },
+        {
+            "current": 1205.136,
+            "min": 400.0,
+            "max": 5200.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 5200.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4100.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4100.0
+        },
+        {
+            "current": 930.391,
+            "min": 400.0,
+            "max": 4100.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4100.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4100.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4100.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4100.0
+        },
+        {
+            "current": 400.0,
+            "min": 400.0,
+            "max": 4100.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 937.3305015563965,
+            "used": 32.46814727783203
+        }
+    },
+    "gpu": "NVIDIA GeForce RTX 4070 Laptop GPU",
+    "gpu_count": 1,
+    "gpu_devices": [
+        {
+            "name": "NVIDIA GeForce RTX 4070 Laptop GPU",
+            "memory_total": 8585740288
+        }
+    ],
+    "memory": {
+        "total": 31.044239044189453
+    }
+}
