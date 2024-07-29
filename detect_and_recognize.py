@@ -38,6 +38,8 @@ def detect_sunflower(image,model,display = False):
 
             cv2.rectangle(image,(xmin,ymin),(xmax,ymax),color,2)
             text = "Sunflower: {:.2f}%".format(confidences[i]* 100)
+
+            
             cv2.putText(image,text,(xmin,ymin - 5),cv2.FONT_HERSHEY_SIMPLEX,1,color,2)
 
             if display:
@@ -57,7 +59,7 @@ if __name__ == "__main__":
     #YOLO modelini yükle
     model = YOLO("/home/hafizeogut/Desktop/sunflower_object_detection/runs/detect/yolov8n_sunflower/weights/best.pt")
     #Test görüntüsünün yolu
-    file_path = "/home/hafizeogut/Desktop/test.jpg"
+    file_path = "/home/hafizeogut/Desktop/aycicekler.mp4"
     _, file_extension = os.path.splitext(file_path)
     # print("file_extension",file_extension)
 
@@ -69,7 +71,38 @@ if __name__ == "__main__":
         cv2.waitKey(0)
         cv2.destroyAllWindows()
     elif file_extension in [".mp4",".mkv",".avi",".wmv",".mov"] :
-        pass
+        print("processing the video..")
+
+        video_cap = cv2.VideoCapture(file_path)
+        frame_width = int(video_cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+        frame_height = int(video_cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+        fps = int(video_cap.get(cv2.CAP_PROP_FPS))
+
+        fourcc = cv2.VideoWriter_fourcc(*"mp4v")
+        writer = cv2.VideoWriter("output/output.mp4",fourcc,fps,(frame_width,frame_height))
+        cv2.namedWindow("output", cv2.WINDOW_NORMAL)  # Pencereyi yeniden boyutlandırılabilir yapın
+        cv2.resizeWindow("output", 1000, 1000) 
+        while True:
+            start =time.time()
+            succes,frame = video_cap.read()
+            if not succes:
+                print("Not found video")
+                break
+
+            sunflower_list = detect_sunflower(frame,model)
+            end =time.time()
+            fbs = f"FBS:{1/(end-start)}.2f"
+            cv2.putText(frame,fbs,(50,50),cv2.FONT_HERSHEY_SIMPLEX,2,(0,0,255),8)
+
+            cv2.imshow("output",frame)
+            writer.write(frame)
+
+            if cv2.waitKey(10) == ord("q"):
+                break
+
+        video_cap.release()
+        writer.release()
+        cv2.destroyAllWindows()
 
 """
 print(detections)
